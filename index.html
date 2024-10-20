@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game launcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">GAMESCOM</a>  
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#tournaments">Tournaments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul> 
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <!-- Home Banner -->
+     <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>Rumah Baru Untuk<br>Para Gamers</h2>
+                <p>Temukan game terbaru dan terbaik di sini!</p>
+                <a href="#" class="btn">Join Now</a>
+            </div>
+            <img src="/image/Cyberpunk.png">
+        </div>
+     </div>
+
+     <!-- About -->
+     <div class="about animeX" id="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>Platform game daring yang dirancang untuk memberikan pengalaman bermain yang mudah diakses dan menarik bagi semua kalangan, baik pemain pemula maupun yang berpengalaman. Website ini menyediakan berbagai macam permainan dari genre populer, mulai dari aksi, strategi, hingga RPG, yang semuanya dapat diakses langsung melalui browser tanpa perlu instalasi tambahan.
+                Dengan tampilan yang responsif dan kompatibel untuk semua perangkat, pengguna dapat menikmati permainan kapan saja, di mana saja. Website ini juga memungkinkan pemain untuk membuat profil pribadi, melacak statistik permainan, dan meraih prestasi yang dapat dipamerkan ke komunitas. Selain itu, terdapat fitur multiplayer dan komunitas yang memungkinkan interaksi antar pemain melalui obrolan langsung, turnamen mingguan, dan leaderboard global.
+                Bagi pengembang game indie, website ini juga menyediakan ruang untuk memamerkan karya mereka, memberikan eksposur kepada talenta baru di industri game. Integrasi dengan media sosial memungkinkan pengguna untuk berbagi pencapaian mereka dengan mudah dan tetap terhubung dengan sesama pemain.
+                Website ini menjadi satu tempat untuk semua kebutuhan gaming, menyatukan penggemar game dari berbagai genre dalam sebuah pengalaman yang seru dan interaktif.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="/image/Videogame.png">
+     </div>
+
+     <!-- Games -->
+     <div class="games animeX" id="games">
+        <h2>MY Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">ALL</li>
+            <li class="list" data-filter="action">Action</li>
+            <li class="list" data-filter="adventure">Adventure</li>
+            <li class="list" data-filter="open">Open World</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="action">
+                <img src="/image/game1.png">
+                <div class="content">
+                    <h4>God of War Ragnarok</h4>
+                    <div class="progress-line">Santa Monica Studio</div>
+                    <div class="info">
+                        <p>Action</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="action">
+                <img src="/image/game2.png">
+                <div class="content">
+                    <h4>Spiderman</h4>
+                    <div class="progress-line">Insomniac</div>
+                    <div class="info">
+                        <p>Action</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="open">
+                <img src="/image/game3.png">
+                <div class="content">
+                    <h4>Grand Theft Auto V</h4>
+                    <div class="progress-line">Rockstar Games</div>
+                    <div class="info">
+                        <p>Open World</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="open">
+                <img src="/image/game4.png">
+                <div class="content">
+                    <h4>Ghost of tsushima</h4>
+                    <div class="progress-line">Sucker Punch</div>
+                    <div class="info">
+                        <p>Open World</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="adventure">
+                <img src="/image/game5.png">
+                <div class="content">
+                    <h4>Horizon Forbidden West</h4>
+                    <div class="progress-line">Nixes Software</div>
+                    <div class="info">
+                        <p>Adventure</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="adventure">
+                <img src="/image/game6.png">
+                <div class="content">
+                    <h4>The Last of Us Part 1</h4>
+                    <div class="progress-line">Naughty Dog</div>
+                    <div class="info">
+                        <p>Adventure</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="adventure">
+                <img src="/image/game7.png">
+                <div class="content">
+                    <h4>Uncharted 4</h4>
+                    <div class="progress-line">Naughty Dog</div>
+                    <div class="info">
+                        <p>Adventure</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="adventure">
+                <img src="/image/game8.png">
+                <div class="content">
+                    <h4>Horizon Zero Dawn</h4>
+                    <div class="progress-line">Nixes Software</div>
+                    <div class="info">
+                        <p>Adventure</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="action">
+                <img src="/image/game9.png">
+                <div class="content">
+                    <h4>Spiderman Miles Morales</h4>
+                    <div class="progress-line">Insomniac</div>
+                    <div class="info">
+                        <p>Action</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="action">
+                <img src="/image/game10.png">
+                <div class="content">
+                    <h4>God of War</h4>
+                    <div class="progress-line">Santa Monica Studio</div>
+                    <div class="info">
+                        <p>Action</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="open">
+                <img src="/image/game11.png">
+                <div class="content">
+                    <h4>Watch Dogs 2</h4>
+                    <div class="progress-line">Ubisoft</div>
+                    <div class="info">
+                        <p>Open World</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="open">
+                <img src="/image/game12.png">
+                <div class="content">
+                    <h4>Red Dead Redemption 2</h4>
+                    <div class="progress-line">Rockstar Games</div>
+                    <div class="info">
+                        <p>Open World</p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Tournament -->
+     <div class="tournaments animeX" id="tournaments">
+        <h2>Live Tournaments</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="/image/Tournament.png">
+                <div class="content">
+                    <h4><span>50</span> Matches in progress..</h4>
+                    <p>disiarkan secara langsung di platform streaming seperti Twitch dan YouTube, memungkinkan penggemar untuk menyaksikan aksi dan mendukung tim favorit mereka. Turnamen ini menciptakan suasana kompetitif yang intens dan menghibur, serta memperkuat komunitas penggemar Valorant di seluruh dunia.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="/image/Tournament2.png">
+                <div class="content">
+                    <h4><span>10</span> match sedang berlangsung</h4>
+                    <p>disiarkan secara langsung di platform streaming seperti Twitch dan YouTube, memungkinkan penggemar untuk menyaksikan aksi dan mendukung tim favorit mereka. Turnamen ini menciptakan suasana kompetitif yang intens dan menghibur, serta memperkuat komunitas penggemar Valorant di seluruh dunia.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/image/Tournament3.png">
+                <div class="content">
+                    <h4><span>20</span> match sedang berlangsung</h4>
+                    <p>disiarkan secara langsung di platform streaming seperti Twitch dan YouTube, memungkinkan penggemar untuk menyaksikan aksi dan mendukung tim favorit mereka. Turnamen ini menciptakan suasana kompetitif yang intens dan menghibur, serta memperkuat komunitas penggemar Valorant di seluruh dunia.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/image/Tournament4.png">
+                <div class="content">
+                    <h4><span>15</span> match sedang berlangsung</h4>
+                    <p>disiarkan secara langsung di platform streaming seperti Twitch dan YouTube, memungkinkan penggemar untuk menyaksikan aksi dan mendukung tim favorit mereka. Turnamen ini menciptakan suasana kompetitif yang intens dan menghibur, serta memperkuat komunitas penggemar Valorant di seluruh dunia.
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+
+    <!-- contact --> 
+     <div class="contact animeX" id="contact">
+        <img src="/image/contact.png">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Name:</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Email:</p>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea  placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="Submit" name="Submit">
+            </div>
+        </div>
+     </div>
+     <br>
+     <br>
+
+     <!-- Footer -->
+      <footer>
+        <div class="info">
+            <a href="#" class="logo">GAMESCOM</a>
+            <p><i class='bx bx-copyright'></i>2024 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+            </ul>
+        </div>
+      </footer>
+
+     <script>
+        /* sticky NavBar */
+window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+/* Responsive NavBar */
+
+function toggleMenu() {
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    toggleMenu.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+
+    /* Scrolling Animation Effect */
+    window.addEventListener('scroll',function(){
+        var anime = document.querySelectorAll('.animeX');
+
+        for(var s = 0; s < anime.length; s++){
+            var windowheight = window.innerHeight;
+            var animetop = anime[s].getBoundingClientRect().top;
+            var animepoint = 150;
+
+            if(animetop < windowheight - animepoint){
+                anime[s].classList.add('active');
+            }
+            else{
+                anime[s].classList.remove('active');
+            }
+        }
+    })
+
+/* Filterable Cards */
+
+let list = document.querySelectorAll('.list');
+let card = document.querySelectorAll('.card');
+
+for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', function() {
+        for (let j = 0; j < list.length; j++) {
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let datafilter = this.getAttribute('data-filter');
+
+        for( let k=0; k<card.length; k++){
+            card[k].classList.remove('active');
+            card[k].classList.add('hide');
+
+            if(card[k].getAttribute('data-item') == datafilter || datafilter == 'all'){
+                card[k].classList.remove('hide');
+                card[k].classList.add('active');
+            }
+        }
+    });
+}
+     </script>
+</body>
+</html>
