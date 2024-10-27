@@ -701,7 +701,7 @@ footer .info ul li:hover a i{
     background-color: #666;
 }
 
-/* Untuk layar dengan lebar maksimum 576px (ponsel kecil) *
+/* Untuk layar dengan lebar maksimum 576px (ponsel kecil) */
 @media (max-width: 576px) {
     .banner .bg .content h2 {
         font-size: 2em;
