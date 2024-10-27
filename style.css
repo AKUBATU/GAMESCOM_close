@@ -852,3 +852,62 @@ a, button {
     margin: 10px 0;
     font-size: 1.1em;
 }
+
+/* Responsive untuk mobile */
+@media (max-width: 576px) {
+    .action {
+        width: 35px;
+    }
+
+    /* Memperbesar lebar input saat container diaktifkan */
+    .action.active {
+        width: 80%;
+    }
+}
+    .games .cardBx .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .tournaments .boxBx .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .info {
+        text-align: center;
+    }
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a, button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+}
