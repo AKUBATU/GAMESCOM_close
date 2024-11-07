@@ -1,4 +1,4 @@
-const apiKey = 'CA9F9FDC3DCE561789DC9AC09AAC60B6'; // Ganti dengan API Key Anda
+const apiKey = ''; // Ganti dengan API Key Anda
 const steamId = '76561198844912638'; // Ganti dengan Steam ID pengguna
 
 async function getOwnedGames() {
